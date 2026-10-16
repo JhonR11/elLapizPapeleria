@@ -1,0 +1,4 @@
+[build]
+  base = "sakai-react-master"
+  command = "npm run build"
+  publish = ".next"
