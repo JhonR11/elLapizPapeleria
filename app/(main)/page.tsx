@@ -101,7 +101,7 @@ const Dashboard = () => {
                     <h1 className="text-900 text-3xl font-semibold mt-2 mb-1">Panel de control</h1>
                     <p className="text-600 m-0">Resumen de inventario y actividad comercial</p>
                 </div>
-                <Link href="/sales/pos" className="p-button p-component no-underline"><i className="pi pi-plus mr-2" />Nueva venta</Link>
+                <Link href="/sales/pos" className="p-button p-component no-underline text-white"><i className="pi pi-plus mr-2" />Nueva venta</Link>
             </div>
 
             {metrics.map((metric) => (

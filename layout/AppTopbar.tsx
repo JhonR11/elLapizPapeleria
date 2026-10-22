@@ -20,20 +20,20 @@ const AppTopbar = forwardRef<AppTopbarRef>((props, ref) => {
 
     return (
         <div className="layout-topbar">
-            <Link href="/" className="layout-topbar-logo">
-                <i className="pi pi-pencil text-primary text-2xl" aria-hidden="true" />
-                <span>Papelería El Lápiz</span>
-            </Link>
-
             <button ref={menubuttonRef} type="button" className="p-link layout-menu-button layout-topbar-button" onClick={onMenuToggle}>
                 <i className="pi pi-bars" />
             </button>
+
+            <Link href="/" className="layout-topbar-logo">
+                <img src="/layout/images/logo-papeleria.png" alt="Logo de Papelería El Lápiz" />
+                <span className='pl-2 font-semibold font-primary'>Papelería El Lápiz</span>
+            </Link>
 
             <button ref={topbarmenubuttonRef} type="button" className="p-link layout-topbar-menu-button layout-topbar-button" onClick={showProfileSidebar}>
                 <i className="pi pi-ellipsis-v" />
             </button>
 
-            <div ref={topbarmenuRef} className={classNames('layout-topbar-menu', { 'layout-topbar-menu-mobile-active': layoutState.profileSidebarVisible })}>
+            {/* <div ref={topbarmenuRef} className={classNames('layout-topbar-menu', { 'layout-topbar-menu-mobile-active': layoutState.profileSidebarVisible })}>
                 <button type="button" className="p-link layout-topbar-button">
                     <i className="pi pi-calendar"></i>
                     <span>Calendar</span>
@@ -48,7 +48,7 @@ const AppTopbar = forwardRef<AppTopbarRef>((props, ref) => {
                         <span>Settings</span>
                     </button>
                 </Link>
-            </div>
+            </div> */}
         </div>
     );
 });
